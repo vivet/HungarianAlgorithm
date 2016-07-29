@@ -1,5 +1,7 @@
-
-/HungarianAlgorithm/bin/
-/HungarianAlgorithm/obj/
-/HungarianAlgorithm.sln.DotSettings
-/HungarianAlgorithm.v11.suo
+*.user
+*.userprefs
+*.suo
+_ReSharper*
+**/bin
+**/obj
+*.DotSettings

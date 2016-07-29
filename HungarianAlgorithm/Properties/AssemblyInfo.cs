@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("HungarianAlgorithm")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Hungarian Algorithm")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP")]
 [assembly: AssemblyProduct("HungarianAlgorithm")]

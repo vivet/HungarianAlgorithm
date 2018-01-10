@@ -1,5 +1,4 @@
 language: csharp
-dotnet: 1.1.7, 4.5
 solution: HungarianAlgorithm.sln
 script:
   - dotnet restore

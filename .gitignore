@@ -5,3 +5,7 @@ _ReSharper*
 **/bin
 **/obj
 *.DotSettings
+packages
+.vs
+project.lock.json
+TestResults*

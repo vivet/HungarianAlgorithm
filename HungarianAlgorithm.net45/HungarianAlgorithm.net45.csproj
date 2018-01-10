@@ -36,6 +36,7 @@
     <DocumentationFile>bin\Release\HungarianAlgorithm.xml</DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <RegisterForComInterop>false</RegisterForComInterop>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

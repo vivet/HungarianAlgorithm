@@ -1,2 +1,6 @@
 language: csharp
+dotnet: 1.0.0
 solution: HungarianAlgorithm.sln
+script:
+  - dotnet restore
+  - dotnet build -c Release

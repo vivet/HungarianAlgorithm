@@ -1,5 +1,6 @@
 language: csharp
-dotnet: 1.0.0
+dotnet: 1.1.0
+sudo: false
 solution: HungarianAlgorithm.sln
 script:
   - dotnet restore

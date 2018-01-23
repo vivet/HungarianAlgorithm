@@ -6,7 +6,7 @@
 Implemenation of the Hungarian Algorithm.  
 The Hungarian method is a combinatorial optimization algorithm that solves the assignment problem in polynomial time and which anticipated later primal-dual methods.
 
-#### Usage:
+##### Using the algorithm
 ```csharp
 var costs origins = new int[x,y]();
 var result = HungarianAlgorithm.FindAssignments(costs);

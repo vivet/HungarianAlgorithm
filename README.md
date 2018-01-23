@@ -8,6 +8,6 @@ The Hungarian method is a combinatorial optimization algorithm that solves the a
 
 ##### Using the algorithm
 ```csharp
-var costs origins = new int[x,y]();
+var costs = new int[x,y]();
 var result = HungarianAlgorithm.FindAssignments(costs);
 ```

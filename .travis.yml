@@ -2,6 +2,3 @@ language: csharp
 os: windows
 mono: none
 solution: HungarianAlgorithm.sln
-script:
-  - dotnet restore
-  - dotnet build -c Release

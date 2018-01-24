@@ -1,4 +1,4 @@
-# HungarianAlgorithm
+# Hungarian Algorithm
 [![Build Status](https://travis-ci.org/vivet/HungarianAlgorithm.svg?branch=master)](https://travis-ci.org/vivet/HungarianAlgorithm)
 [![NuGet](https://img.shields.io/nuget/dt/HungarianAlgorithm.svg)](https://www.nuget.org/packages/HungarianAlgorithm/)
 [![NuGet](https://img.shields.io/nuget/v/HungarianAlgorithm.svg)](https://www.nuget.org/packages/HungarianAlgorithm/)

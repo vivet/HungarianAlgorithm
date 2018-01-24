@@ -3,4 +3,4 @@ os: windows
 mono: none
 solution: HungarianAlgorithm.sln
 script:
-  - xbuild /p:Configuration=Release HungarianAlgorithm.sln
+  - msbuild HungarianAlgorithm.sln

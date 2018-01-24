@@ -48,6 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\HungarianAlgorithm\Extensions\ArrayExtensions.cs">
+      <Link>Extensions\ArrayExtensions.cs</Link>
+    </Compile>
     <Compile Include="..\HungarianAlgorithm\HungarianAlgorithm.cs">
       <Link>HungarianAlgorithm.cs</Link>
     </Compile>

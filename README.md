@@ -5,9 +5,12 @@
 
 The Hungarian algorithm is a combinatorial optimization method, that solves the assignment problem in polynomial time, and which anticipated later primal-dual methods. In other words, based on a matrix of possible combinations of costs, the algorithm returns an ordered collcetion of matches, having the lowest combined cost, thus being the most optimal assignment.
 
-#### Example:
+
+
 The code below shows how to apply and use the algorithm.  
 ```csharp
 int[,] costs = new int[x,y]();
 int[] result = HungarianAlgorithm.FindAssignments(costs);
 ```
+
+The results is an array of column (y) within each row (x) passed.

@@ -4,4 +4,4 @@ os: windows
 mono: none
 sudo: false
 script:
-  - msbuild HungarianAlgorithm.sln /p:Configuration=Release
+  - xbuild HungarianAlgorithm.sln /p:Configuration=Release

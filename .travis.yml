@@ -1,4 +1,7 @@
 language: csharp
 solution: HungarianAlgorithm.sln
+os: windows
+mono: none
+sudo: false
 script:
-  - xbuild /p:Configuration=Release HungarianAlgorithm.sln
+  - msbuild HungarianAlgorithm.sln /p:Configuration=Release

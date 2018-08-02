@@ -8,12 +8,12 @@
     <Company>Michael Vivet</Company>
     <Product>Hungarian Algorithm</Product>
     <Description>Implementation Hungarian Algorithm. Travelling salesman problem.</Description>
-    <Version>1.0.3</Version>
+    <Version>1.1.0</Version>
     <PackageLicenseUrl>https://raw.githubusercontent.com/vivet/HungarianAlgorithm/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/vivet/HungarianAlgorithm</PackageProjectUrl>
     <RepositoryUrl>https://github.com/vivet/HungarianAlgorithm</RepositoryUrl>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <FileVersion>1.0.3.0</FileVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

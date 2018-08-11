@@ -4,6 +4,8 @@
 
 The Hungarian algorithm is a combinatorial optimization method, that solves the assignment problem in polynomial time, and which anticipated later primal-dual methods. In other words, based on a matrix of possible combinations of costs, the algorithm returns an ordered collcetion of matches, having the lowest combined cost, thus being the most optimal assignment.
 
+***
+
 #### The Algorithm
 The example below, shows how to use and apply the algorithm.  
 It defines a two-dimensional array, passes it to algorithm, and recieves a result of an array of matched columns for each row (x) passed.
@@ -18,3 +20,7 @@ The algorithm doesn't always produce the most optimal result, when the input con
 int[,] costs = new int[x,y]();
 int[,] squared = costs.SquareArray(costs)
 ```
+
+***
+
+Original source-code posted by Alex Regueiro in 2010 ([Link](https://web.archive.org/web/20121106104729/http://noldorin.com:80/programming/HungarianAlgorithm.cs))

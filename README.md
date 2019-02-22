@@ -1,4 +1,5 @@
 # Hungarian Algorithm
+[![Build status](https://ci.appveyor.com/api/projects/status/399dkyksy1nxfrqm/branch/master?svg=true)](https://ci.appveyor.com/project/vivet/hungarianalgorithm/branch/master)
 [![NuGet](https://img.shields.io/nuget/dt/HungarianAlgorithm.svg)](https://www.nuget.org/packages/HungarianAlgorithm/)
 [![NuGet](https://img.shields.io/nuget/v/HungarianAlgorithm.svg)](https://www.nuget.org/packages/HungarianAlgorithm/)
 

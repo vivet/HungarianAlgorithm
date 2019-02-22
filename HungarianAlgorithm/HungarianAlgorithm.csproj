@@ -1,35 +1,38 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFrameworks>netstandard1.0;net45</TargetFrameworks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Michael Vivet</Authors>
     <Company>Michael Vivet</Company>
-    <Product>Hungarian Algorithm</Product>
-    <Description>Implementation Hungarian Algorithm. Travelling salesman problem.</Description>
-    <Version>1.1.0</Version>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/vivet/HungarianAlgorithm/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/vivet/HungarianAlgorithm</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/vivet/HungarianAlgorithm</RepositoryUrl>
+    <Version>1.1.0.0</Version>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <FileVersion>1.1.0.0</FileVersion>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <LangVersion>latest</LangVersion>
-    <NoWarn />
-    <WarningsAsErrors />
+    <Version>2.1.2</Version>
+    <Product>Hungarian Algorithm</Product>
+    <Summary>Implementation Hungarian Algorithm.</Summary>
+    <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>
+    <PackageTags>Algorithm, Hungarian</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageLicense>https://raw.githubusercontent.com/vivet/HungarianAlgorithm/master/LICENSE</PackageLicense>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/vivet/HungarianAlgorithm</PackageProjectUrl>
+    <RepositoryType>Github</RepositoryType>
+    <RepositoryUrl>https://github.com/vivet/HungarianAlgorithm</RepositoryUrl>
+    <PackageIconUrl></PackageIconUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <DocumentationFile>bin\Debug\netstandard1.0\HungarianAlgorithm.xml</DocumentationFile>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn />
-    <WarningsAsErrors />
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <DocumentationFile>bin\Release\netstandard1.0\HungarianAlgorithm.xml</DocumentationFile>
-    <LangVersion>latest</LangVersion>
   </PropertyGroup>
-
+  <ItemGroup>
+    <None Include="..\LICENSE.txt" Pack="true" PackagePath="" />
+  </ItemGroup>
 </Project>

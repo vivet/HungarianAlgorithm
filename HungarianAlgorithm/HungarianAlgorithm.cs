@@ -364,10 +364,10 @@ namespace HungarianAlgorithm
 
         private struct Location
         {
-            public readonly int row;
-            public readonly int column;
+            internal readonly int row;
+            internal readonly int column;
 
-            public Location(int row, int col)
+            internal Location(int row, int col)
             {
                 this.row = row;
                 this.column = col;

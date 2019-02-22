@@ -6,14 +6,12 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{8B12F098-F824-4695-9D35-9F1131D282DA}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		.travis.yml = .travis.yml
+		appveyor.yml = appveyor.yml
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HungarianAlgorithm", "HungarianAlgorithm\HungarianAlgorithm.csproj", "{31514C11-14D4-417A-87AE-515B7114A2ED}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HungarianAlgorithm.net45", "HungarianAlgorithm.net45\HungarianAlgorithm.net45.csproj", "{AA3FDADF-0F57-48B5-AB3B-783D7D8DCB73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		{31514C11-14D4-417A-87AE-515B7114A2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31514C11-14D4-417A-87AE-515B7114A2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31514C11-14D4-417A-87AE-515B7114A2ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA3FDADF-0F57-48B5-AB3B-783D7D8DCB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA3FDADF-0F57-48B5-AB3B-783D7D8DCB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA3FDADF-0F57-48B5-AB3B-783D7D8DCB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA3FDADF-0F57-48B5-AB3B-783D7D8DCB73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

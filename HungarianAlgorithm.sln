@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HungarianAlgorithm", "HungarianAlgorithm\HungarianAlgorithm.csproj", "{31514C11-14D4-417A-87AE-515B7114A2ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tests", ".tests", "{1F04AA6F-4EA9-4D55-A9B4-7512A8679B16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HungarianAlgorithm.Test", ".tests\HungarianAlgorithm.Test\HungarianAlgorithm.Test.csproj", "{A6CF8C9F-EE03-43EF-8899-3451CD699D00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,9 +27,16 @@ Global
 		{31514C11-14D4-417A-87AE-515B7114A2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31514C11-14D4-417A-87AE-515B7114A2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31514C11-14D4-417A-87AE-515B7114A2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6CF8C9F-EE03-43EF-8899-3451CD699D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6CF8C9F-EE03-43EF-8899-3451CD699D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6CF8C9F-EE03-43EF-8899-3451CD699D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6CF8C9F-EE03-43EF-8899-3451CD699D00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6CF8C9F-EE03-43EF-8899-3451CD699D00} = {1F04AA6F-4EA9-4D55-A9B4-7512A8679B16}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE2D6AB8-D826-4CFC-B657-AED904D04EDC}

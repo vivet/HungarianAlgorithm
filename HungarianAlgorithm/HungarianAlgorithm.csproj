@@ -9,7 +9,7 @@
     <LangVersion>latest</LangVersion>
     <AssemblyVersion>2.2.2.0</AssemblyVersion>
     <FileVersion>2.2.2.0</FileVersion>
-    <Version>2.2.2.0</Version>
+    <Version>2.2.2</Version>
     <Product>Hungarian Algorithm</Product>
     <Summary>Implementation Hungarian Algorithm.</Summary>
     <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>

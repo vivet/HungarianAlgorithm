@@ -9,15 +9,19 @@
     <LangVersion>latest</LangVersion>
     <AssemblyVersion>2.2.4.0</AssemblyVersion>
     <FileVersion>2.2.4.0</FileVersion>
-    <Version>2.2.4</Version>
+    <Version>2.2.4.0</Version>
     <Product>Hungarian Algorithm</Product>
     <Summary>Implementation Hungarian Algorithm.</Summary>
     <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>
     <PackageTags>Algorithm, Hungarian</PackageTags>
     <PackageReleaseNotes></PackageReleaseNotes>
     <RepositoryType>Github</RepositoryType>
-    <RepositoryUrl>https://github.com/vivet/HungarianAlgorithm</RepositoryUrl>
+    <RepositoryUrl>https://github.com/vivet/HungarianAlgorithm.git</RepositoryUrl>
     <PackageIconUrl></PackageIconUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/vivet/HungarianAlgorithm</PackageProjectUrl>
+    <NeutralLanguage>English</NeutralLanguage>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard1.0\HungarianAlgorithm.xml</DocumentationFile>
@@ -25,4 +29,15 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard1.0\HungarianAlgorithm.xml</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.0|AnyCPU'">
+    <WarningsAsErrors />
+    <NoWarn />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.0|AnyCPU'">
+    <WarningsAsErrors />
+    <NoWarn />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
+  </ItemGroup>
 </Project>

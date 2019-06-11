@@ -7,20 +7,23 @@
     <Company>Michael Vivet</Company>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>latest</LangVersion>
-    <AssemblyVersion>2.1.5.0</AssemblyVersion>
-    <FileVersion>2.1.5.0</FileVersion>
-    <Version>2.1.5</Version>
+    <AssemblyVersion>2.2.4.0</AssemblyVersion>
+    <FileVersion>2.2.4.0</FileVersion>
+    <Version>2.2.4.0</Version>
     <Product>Hungarian Algorithm</Product>
     <Summary>Implementation Hungarian Algorithm.</Summary>
     <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>
     <PackageTags>Algorithm, Hungarian</PackageTags>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>- Updated NuGet configuratuon and license information.</PackageReleaseNotes>
     <PackageLicense>https://raw.githubusercontent.com/vivet/HungarianAlgorithm/master/LICENSE</PackageLicense>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>Github</RepositoryType>
-    <RepositoryUrl>https://github.com/vivet/HungarianAlgorithm</RepositoryUrl>
+    <RepositoryUrl>https://github.com/vivet/HungarianAlgorithm.git</RepositoryUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageIconUrl></PackageIconUrl>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/vivet/HungarianAlgorithm/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/vivet/HungarianAlgorithm</PackageProjectUrl>
+    <NeutralLanguage>English</NeutralLanguage>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -30,4 +33,15 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <DocumentationFile>bin\Release\netstandard1.0\HungarianAlgorithm.xml</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.0|AnyCPU'">
+    <WarningsAsErrors />
+    <NoWarn />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.0|AnyCPU'">
+    <WarningsAsErrors />
+    <NoWarn />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
+  </ItemGroup>
 </Project>

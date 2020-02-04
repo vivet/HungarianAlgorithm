@@ -1,25 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard1.0;netstandard1.4;netstandard2.0;netstandard2.1;net45</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Michael Vivet</Authors>
     <Company>Michael Vivet</Company>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>latest</LangVersion>
-    <AssemblyVersion>2.2.4.0</AssemblyVersion>
-    <FileVersion>2.2.4.0</FileVersion>
-    <Version>2.2.4.0</Version>
+    <AssemblyVersion>2.2.5.0</AssemblyVersion>
+    <FileVersion>2.2.5.0</FileVersion>
+    <Version>2.2.5.0</Version>
     <Product>Hungarian Algorithm</Product>
     <Summary>Implementation Hungarian Algorithm.</Summary>
     <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>
     <PackageTags>Algorithm, Hungarian</PackageTags>
-    <PackageReleaseNotes>- Updated Nuget configuration and License information.</PackageReleaseNotes>
+    <PackageReleaseNotes>- Added more supported net-standard formats.</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>Github</RepositoryType>
     <RepositoryUrl>https://github.com/vivet/HungarianAlgorithm.git</RepositoryUrl>
-    <PackageIconUrl></PackageIconUrl>
     <PackageLicenseUrl></PackageLicenseUrl>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageProjectUrl>https://github.com/vivet/HungarianAlgorithm</PackageProjectUrl>

@@ -1,7 +1,7 @@
-version: 2.2.4.{build}
+version: 2.2.5.{build}
 skip_tags: true
 max_jobs: 1
-image: Visual Studio 2017
+image: Visual Studio 2019
 configuration: Release
 platform: Any CPU
 force_https_clone: true
@@ -11,7 +11,7 @@ nuget:
 environment:
   NUGET_HOST: https://www.nuget.org
   NUGET_APIKEY: 
-    secure: oeSwT33L7QcWnDXH3H/pWIUJDdM+el24LvqEQ6HqzpR0Ok/7Z3VZj51u14veU1Ho
+    secure: LBjemyCw2u3Vp5qprTPynswwuvMwydNpGNwNeiycZbbYIAj/+4RFpxbVJirfWmIk
 build: off
 build_script:
 - ps: >-

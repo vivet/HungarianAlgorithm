@@ -12,10 +12,12 @@ environment:
   NUGET_HOST: https://www.nuget.org
   NUGET_APIKEY: 
     secure: LBjemyCw2u3Vp5qprTPynswwuvMwydNpGNwNeiycZbbYIAj/+4RFpxbVJirfWmIk
-build: off
-build_script:
-- ps: >-
-    dotnet build .\HungarianAlgorithm.sln;
+build:
+  project: HungarianAlgorithm.sln
+  publish_nuget: true
+  publish_nuget_symbols: true
+  use_snupkg_format: true
+  parallel: true
 test: off
 test_script:
 - ps: >-

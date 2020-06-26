@@ -12,6 +12,8 @@ environment:
   NUGET_HOST: https://www.nuget.org
   NUGET_APIKEY: 
     secure: LBjemyCw2u3Vp5qprTPynswwuvMwydNpGNwNeiycZbbYIAj/+4RFpxbVJirfWmIk
+before_build:
+- ps: dotnet restore
 build:
   project: HungarianAlgorithm.sln
   publish_nuget: true

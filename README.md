@@ -22,6 +22,6 @@ int[,] costs = new int[x,y]();
 int[,] squared = costs.SquareArray(costs)
 ```
 
-***
+*** 
 
 _Original source-code posted by Alex Regueiro in 2010 ([Link](https://web.archive.org/web/20121106104729/http://noldorin.com:80/programming/HungarianAlgorithm.cs))_

@@ -1,4 +1,4 @@
-version: 2.2.6.{build}
+version: 2.2.7.{build}
 skip_tags: true
 max_jobs: 1
 image: Visual Studio 2019
@@ -9,11 +9,11 @@ nuget:
   account_feed: false
   project_feed: false
 environment:
-  NUGET_HOST: https://www.nuget.org
+  NUGET_HOST: https://www.myget.org/F/wannasport
   NUGET_APIKEY: 
-    secure: LBjemyCw2u3Vp5qprTPynswwuvMwydNpGNwNeiycZbbYIAj/+4RFpxbVJirfWmIk
+    secure: TtqPjFwlqNLg0X2F4D5bDrHC8vDM0QFtHkjsKPKkBWeUl8zk3UMQdeweosJ6zu47
 before_build:
-- ps: dotnet restore
+- ps: dotnet restore -s $NUGET_HOST/auth/$NUGET_APIKEY
 build:
   project: HungarianAlgorithm.sln
   publish_nuget: true
@@ -31,5 +31,3 @@ deploy:
 - provider: NuGet
   server: $(NUGET_HOST)
   api_key: $(NUGET_APIKEY)
-  on:
-    branch: master

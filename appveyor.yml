@@ -9,9 +9,9 @@ nuget:
   account_feed: false
   project_feed: false
 environment:
-  NUGET_HOST: https://www.myget.org/F/wannasport
+  NUGET_HOST: https://www.nuget.org
   NUGET_APIKEY: 
-    secure: TtqPjFwlqNLg0X2F4D5bDrHC8vDM0QFtHkjsKPKkBWeUl8zk3UMQdeweosJ6zu47
+    secure: LBjemyCw2u3Vp5qprTPynswwuvMwydNpGNwNeiycZbbYIAj/+4RFpxbVJirfWmIk
 build: off
 build_script:
 - ps: >-

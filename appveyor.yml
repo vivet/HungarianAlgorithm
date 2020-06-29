@@ -11,13 +11,10 @@ nuget:
 environment:
   NUGET_HOST: https://www.nuget.org
   NUGET_APIKEY: 
-    secure: LBjemyCw2u3Vp5qprTPynswwuvMwydNpGNwNeiycZbbYIAj/+4RFpxbVJirfWmIk
-build: off
+    secure: LBjemyCw2u3Vp5qprTPynswwuvMwydNpGNwNeiycZbbYIAj/+4RFpxbVJirfbuild: off
 build_script:
 - ps: >-
-    dotnet build .\HungarianAlgorithm.sln;
-test: off
-test_script:
+    dotnet build .\HungarianAlgorithmtest_script:
 - ps: >-
     dotnet test .\.tests\HungarianAlgorithm.Test\HungarianAlgorithm.Test.csproj
 artifacts:
@@ -29,3 +26,5 @@ deploy:
 - provider: NuGet
   server: $(NUGET_HOST)
   api_key: $(NUGET_APIKEY)
+on:
+  branch: master

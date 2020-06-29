@@ -26,5 +26,5 @@ deploy:
 - provider: NuGet
   server: $(NUGET_HOST)
   api_key: $(NUGET_APIKEY)
-on:
-  branch: master
+  on:
+    branch: master

@@ -15,7 +15,8 @@ environment:
 build: off
 build_script:
 - ps: >-
-    dotnet build .\HungarianAlgorithmtest_script:
+    dotnet build .\HungarianAlgorithm
+test_script:
 - ps: >-
     dotnet test .\.tests\HungarianAlgorithm.Test\HungarianAlgorithm.Test.csproj
 artifacts:

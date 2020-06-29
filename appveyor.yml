@@ -12,14 +12,10 @@ environment:
   NUGET_HOST: https://www.myget.org/F/wannasport
   NUGET_APIKEY: 
     secure: TtqPjFwlqNLg0X2F4D5bDrHC8vDM0QFtHkjsKPKkBWeUl8zk3UMQdeweosJ6zu47
-before_build:
-- ps: dotnet restore
-build:
-  project: HungarianAlgorithm.sln
-  publish_nuget: true
-  publish_nuget_symbols: true
-  use_snupkg_format: true
-  parallel: true
+build: off
+build_script:
+- ps: >-
+    dotnet build .\HungarianAlgorithm.sln;
 test: off
 test_script:
 - ps: >-
@@ -31,3 +27,5 @@ deploy:
 - provider: NuGet
   server: $(NUGET_HOST)
   api_key: $(NUGET_APIKEY)
+  on:
+    branch: master

@@ -13,7 +13,7 @@ environment:
   NUGET_APIKEY: 
     secure: TtqPjFwlqNLg0X2F4D5bDrHC8vDM0QFtHkjsKPKkBWeUl8zk3UMQdeweosJ6zu47
 before_build:
-- ps: dotnet restore -s $NUGET_HOST/auth/$NUGET_APIKEY
+- ps: dotnet restore -s $NUGET_HOST -k $NUGET_APIKEY
 build:
   project: HungarianAlgorithm.sln
   publish_nuget: true

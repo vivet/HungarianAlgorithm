@@ -1,4 +1,4 @@
-version: 2.2.6.{build}
+version: 2.2.8.{build}
 skip_tags: true
 max_jobs: 1
 image: Visual Studio 2019
@@ -11,18 +11,19 @@ nuget:
 environment:
   NUGET_HOST: https://www.nuget.org
   NUGET_APIKEY: 
-    secure: LBjemyCw2u3Vp5qprTPynswwuvMwydNpGNwNeiycZbbYIAj/+4RFpxbVJirfWmIk
+    secure: LBjemyCw2u3Vp5qprTPynswwuvMwydNpGNwNeiycZbbYIAj/+4RFpxbVJirf
 build: off
 build_script:
 - ps: >-
-    dotnet build .\HungarianAlgorithm.sln;
-test: off
+    dotnet build .\HungarianAlgorithm
 test_script:
 - ps: >-
     dotnet test .\.tests\HungarianAlgorithm.Test\HungarianAlgorithm.Test.csproj
 artifacts:
 - path: '**\*.nupkg'
   name: NuGet Package
+- path: '**\*.snupkg'
+  name: NuGet Symbol Package
 deploy:
 - provider: NuGet
   server: $(NUGET_HOST)

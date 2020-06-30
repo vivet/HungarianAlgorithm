@@ -7,14 +7,14 @@
     <Company>Michael Vivet</Company>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>latest</LangVersion>
-    <AssemblyVersion>2.2.6.0</AssemblyVersion>
-    <FileVersion>2.2.6.0</FileVersion>
-    <Version>2.2.6.0</Version>
+    <AssemblyVersion>2.2.8.0</AssemblyVersion>
+    <FileVersion>2.2.8.0</FileVersion>
+    <Version>2.2.8.0</Version>
     <Product>Hungarian Algorithm</Product>
     <Summary>Implementation Hungarian Algorithm.</Summary>
     <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>
     <PackageTags>Algorithm, Hungarian</PackageTags>
-    <PackageReleaseNotes>- Added more supported net-standard formats.</PackageReleaseNotes>
+    <PackageReleaseNotes>- Symbols package added to NuGet package.</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>Github</RepositoryType>

@@ -25,28 +25,17 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <WarningsAsErrors />
+    <NoWarn />
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>$(MSBuildThisFileDirectory)\bin\$(Configuration)\HungarianAlgorithm.xml</DocumentationFile>
+
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>bin\Debug\netstandard1.0\HungarianAlgorithm.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>bin\Release\netstandard1.0\HungarianAlgorithm.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.0|AnyCPU'">
-    <WarningsAsErrors />
-    <NoWarn />
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.0|AnyCPU'">
-    <WarningsAsErrors />
-    <NoWarn />
-  </PropertyGroup>
   <ItemGroup>
     <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
   </ItemGroup>

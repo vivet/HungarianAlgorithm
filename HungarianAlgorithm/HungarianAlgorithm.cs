@@ -61,24 +61,14 @@ namespace HungarianAlgorithm
 
             while (step != -1)
             {
-                switch (step)
+                step = step switch
                 {
-                    case 1:
-                        step = HungarianAlgorithm.RunStep1(masks, colsCovered, w, h);
-                        break;
-
-                    case 2:
-                        step = HungarianAlgorithm.RunStep2(costs, masks, rowsCovered, colsCovered, w, h, ref pathStart);
-                        break;
-
-                    case 3:
-                        step = HungarianAlgorithm.RunStep3(masks, rowsCovered, colsCovered, w, h, path, pathStart);
-                        break;
-
-                    case 4:
-                        step = HungarianAlgorithm.RunStep4(costs, rowsCovered, colsCovered, w, h);
-                        break;
-                }
+                    1 => HungarianAlgorithm.RunStep1(masks, colsCovered, w, h),
+                    2 => HungarianAlgorithm.RunStep2(costs, masks, rowsCovered, colsCovered, w, h, ref pathStart),
+                    3 => HungarianAlgorithm.RunStep3(masks, rowsCovered, colsCovered, w, h, path, pathStart),
+                    4 => HungarianAlgorithm.RunStep4(costs, rowsCovered, colsCovered, w, h),
+                    _ => step
+                };
             }
 
             var agentsTasks = new int[h];
@@ -319,14 +309,12 @@ namespace HungarianAlgorithm
 
             for (var i = 0; i < pathLength; i++)
             {
-                if (masks[path[i].row, path[i].column] == 1)
+                masks[path[i].row, path[i].column] = masks[path[i].row, path[i].column] switch
                 {
-                    masks[path[i].row, path[i].column] = 0;
-                }
-                else if (masks[path[i].row, path[i].column] == 2)
-                {
-                    masks[path[i].row, path[i].column] = 1;
-                }
+                    1 => 0,
+                    2 => 1,
+                    _ => masks[path[i].row, path[i].column]
+                };
             }
         }
         private static void ClearPrimes(byte[,] masks, int w, int h)

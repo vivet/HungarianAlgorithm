@@ -7,14 +7,17 @@
     <Company>Michael Vivet</Company>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>latest</LangVersion>
-    <AssemblyVersion>2.2.8.0</AssemblyVersion>
-    <FileVersion>2.2.8.0</FileVersion>
-    <Version>2.2.8.0</Version>
+    <AssemblyVersion>2.2.9.0</AssemblyVersion>
+    <FileVersion>2.2.9.0</FileVersion>
+    <Version>2.2.9.0</Version>
     <Product>Hungarian Algorithm</Product>
     <Summary>Implementation Hungarian Algorithm.</Summary>
     <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>
     <PackageTags>Algorithm, Hungarian</PackageTags>
-    <PackageReleaseNotes>- Symbols package added to NuGet package.</PackageReleaseNotes>
+    <PackageReleaseNotes>
+	    - Symbols package added to NuGet package.
+	    - Code improvements
+    </PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>Github</RepositoryType>
@@ -22,14 +25,14 @@
     <PackageLicenseUrl></PackageLicenseUrl>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageProjectUrl>https://github.com/vivet/HungarianAlgorithm</PackageProjectUrl>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <WarningsAsErrors />
     <NoWarn />
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <DocumentationFile>$(MSBuildThisFileDirectory)\bin\$(Configuration)\HungarianAlgorithm.xml</DocumentationFile>
-
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>

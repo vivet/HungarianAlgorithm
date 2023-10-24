@@ -7,17 +7,16 @@
     <Company>Michael Vivet</Company>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>latest</LangVersion>
-    <AssemblyVersion>2.2.9.0</AssemblyVersion>
-    <FileVersion>2.2.9.0</FileVersion>
-    <Version>2.2.9.0</Version>
+    <AssemblyVersion>2.2.10.0</AssemblyVersion>
+    <FileVersion>2.2.10.0</FileVersion>
+    <Version>2.2.10.0</Version>
     <Product>Hungarian Algorithm</Product>
     <Summary>Implementation Hungarian Algorithm.</Summary>
     <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>
     <PackageTags>Algorithm, Hungarian</PackageTags>
     <PackageReleaseNotes>
-	    - Symbols package added to NuGet package.
-	    - Code improvements
-    </PackageReleaseNotes>
+		- Fixed performance issue in SqaureArray. Thanks @cihangiremir.
+	</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>Github</RepositoryType>

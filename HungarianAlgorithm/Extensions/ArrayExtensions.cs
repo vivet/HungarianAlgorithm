@@ -16,7 +16,6 @@ public static class ArrayExtensions
     /// <param name="array">The <see cref="Array"/> to square.</param>
     /// <returns>The <see cref="Array"/> squared.</returns>
     public static T[,] SquareArray<T>(this T[][] array)
-        where T : class
     {
         if (array == null)
             throw new ArgumentNullException(nameof(array));
@@ -28,16 +27,19 @@ public static class ArrayExtensions
 
         for (var i = 0; i < loops; i++)
         {
+            if (i > rows - 1)
+            {
+                break;
+            }
+            
             for (var j = 0; j < loops; j++)
             {
-                try
+                if (j > cols - 1)
                 {
-                    square[i, j] = array[i][j];
+                    break;
                 }
-                catch (Exception)
-                {
-                    square[i, j] = null;
-                }
+                
+                square[i, j] = array[i][j];
             }
         }
 

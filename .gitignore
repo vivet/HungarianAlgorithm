@@ -1,11 +1,12 @@
+**/*.user
+**/*.userprefs
 *.user
 *.userprefs
 *.suo
+*.tss
+*.vs
 _ReSharper*
 **/bin
 **/obj
-*.DotSettings
-packages
-.vs
-project.lock.json
-TestResults*
+*.DotSettings.User
+**/wwwroot/lib

@@ -82,6 +82,10 @@ public static class HungarianAlgorithm
                     agentsTasks[i] = j;
                     break;
                 }
+                else
+                {
+                    agentsTasks[i] = -1;
+                }
             }
         }
 
@@ -113,7 +117,7 @@ public static class HungarianAlgorithm
                 colsCoveredCount++;
         }
 
-        if (colsCoveredCount == h)
+        if (colsCoveredCount == Math.Min(w, h))
             return -1;
 
         return 2;

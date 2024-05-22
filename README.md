@@ -15,13 +15,6 @@ int[,] costs = new int[x,y]();
 int[] result = HungarianAlgorithm.FindAssignments(costs);
 ```
 
-#### Square Input Array
-The algorithm doesn't always produce the most optimal result, when the input contains more columns (y) than rows (x). To overcome this issue, square the dimensions of the input before passing it to the algorithm, as shown below.  
-```csharp
-int[,] costs = new int[x,y]();
-int[,] squared = costs.SquareArray(costs)
-```
-
 *** 
 
 _Original source-code posted by Alex Regueiro in 2010 ([Link](https://web.archive.org/web/20121106104729/http://noldorin.com:80/programming/HungarianAlgorithm.cs))_

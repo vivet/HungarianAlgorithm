@@ -20,6 +20,24 @@ public static class HungarianAlgorithm
 
         var h = costs.GetLength(0);
         var w = costs.GetLength(1);
+        bool rowsGreaterThanCols = h > w;
+        if (rowsGreaterThanCols)
+        {
+            // make sure cost matrix has number of rows greater than columns
+            var row = w;
+            var col = h;
+            var transposeCosts = new int [row, col];
+            for (var i = 0; i < row; i++)
+            {
+                for (var j = 0; j < col;j++)
+                {
+                    transposeCosts[i, j] = costs[j, i];
+                }
+            }
+            costs = transposeCosts;
+            h = row;
+            w = col;
+        }
 
         for (var i = 0; i < h; i++)
         {
@@ -87,6 +105,21 @@ public static class HungarianAlgorithm
                     agentsTasks[i] = -1;
                 }
             }
+        }
+
+        if (rowsGreaterThanCols)
+        {
+            var agentsTasksTranspose = new int[w];
+            for (var i = 0; i < w; i++)
+            {
+                agentsTasksTranspose[i] = -1;
+            }
+            
+            for (var j = 0; j < h; j++)
+            {
+                agentsTasksTranspose[agentsTasks[j]] = j;
+            }
+            agentsTasks = agentsTasksTranspose;
         }
 
         return agentsTasks;

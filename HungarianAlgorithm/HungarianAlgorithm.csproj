@@ -1,45 +1,47 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Michael Vivet</Authors>
-    <Company>Michael Vivet</Company>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>latest</LangVersion>
-    <AssemblyVersion>2.3.1.0</AssemblyVersion>
-    <FileVersion>2.3.1.0</FileVersion>
-    <Version>2.3.1.0</Version>
-    <Product>Hungarian Algorithm</Product>
-    <Summary>Implementation Hungarian Algorithm.</Summary>
-    <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>
-    <PackageTags>Algorithm, Hungarian</PackageTags>
-    <PackageReleaseNotes>
-		- Fixed exception with more columns than rows. (thanks @Mrstarr)
-		- Removed square array method (not needed anymore).
-	</PackageReleaseNotes>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <RepositoryType>Github</RepositoryType>
-    <RepositoryUrl>https://github.com/vivet/HungarianAlgorithm.git</RepositoryUrl>
-    <PackageLicenseUrl></PackageLicenseUrl>
-    <NeutralLanguage>en</NeutralLanguage>
-    <PackageProjectUrl>https://github.com/vivet/HungarianAlgorithm</PackageProjectUrl>
-    <WarningsAsErrors />
-    <NoWarn />
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>$(MSBuildThisFileDirectory)\bin\$(Configuration)\HungarianAlgorithm.xml</DocumentationFile>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <IncludeSymbols>true</IncludeSymbols>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Michael Vivet</Authors>
+		<Company>Michael Vivet</Company>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<LangVersion>latest</LangVersion>
+		<AssemblyVersion>2.3.2.0</AssemblyVersion>
+		<FileVersion>2.3.2.0</FileVersion>
+		<Version>2.3.2.0</Version>
+		<License>LICENSE</License>
+	    <Product>Hungarian Algorithm</Product>
+	    <Summary>Implementation Hungarian Algorithm.</Summary>
+	    <Description>Implementation Hungarian Algorithm. The Travelling-salesman-problem.</Description>
+	    <PackageTags>Algorithm, Hungarian</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	    <PackageReleaseNotes>
+			- Updated NuGet information.
+		</PackageReleaseNotes>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<RepositoryType>Github</RepositoryType>
+		<RepositoryUrl>https://github.com/vivet/HungarianAlgorithm.git</RepositoryUrl>
+		<PackageLicenseUrl></PackageLicenseUrl>
+		<NeutralLanguage>en</NeutralLanguage>
+		<PackageProjectUrl>https://github.com/vivet/HungarianAlgorithm</PackageProjectUrl>
+		<WarningsAsErrors />
+		<NoWarn />
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<DocumentationFile>$(MSBuildThisFileDirectory)\bin\$(Configuration)\HungarianAlgorithm.xml</DocumentationFile>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\LICENSE" Pack="true" Visible="false" PackagePath="" />
+		<None Include="..\README.md" Pack="true" Visible="false" PackagePath="" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+	</ItemGroup>
 </Project>

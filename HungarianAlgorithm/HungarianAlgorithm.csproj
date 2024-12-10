@@ -7,9 +7,9 @@
 		<Company>Michael Vivet</Company>
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<LangVersion>latest</LangVersion>
-		<AssemblyVersion>2.3.2.0</AssemblyVersion>
-		<FileVersion>2.3.2.0</FileVersion>
-		<Version>2.3.2.0</Version>
+		<AssemblyVersion>2.3.3.0</AssemblyVersion>
+		<FileVersion>2.3.3.0</FileVersion>
+		<Version>2.3.3.0</Version>
 		<License>LICENSE</License>
 	    <Product>Hungarian Algorithm</Product>
 	    <Summary>Implementation Hungarian Algorithm.</Summary>
@@ -17,7 +17,7 @@
 	    <PackageTags>Algorithm, Hungarian</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	    <PackageReleaseNotes>
-			- Updated NuGet information.
+			- Updated NuGets.
 		</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -42,6 +42,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	</ItemGroup>
 </Project>

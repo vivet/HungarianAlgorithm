@@ -7,14 +7,14 @@ on:
 #       - master
 env:
   APP_NAME: HungarianAlgorithm
-  VERSION: 2.3.3
+  VERSION: "0.0.1-test" #2.3.3
   NUGET_HOST: https://www.nuget.org
   NUGET_APIKEY: ${{ secrets.NUGET_APIKEY }}
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
       id-token: write
     concurrency:

@@ -17,7 +17,7 @@
 	    <PackageTags>Algorithm, Hungarian</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	    <PackageReleaseNotes>
-			- Updated NuGets.
+			- Moved CI/CD to GitHub Actions.
 		</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>

@@ -21,15 +21,11 @@ Let's say you want to solve [this example](https://en.wikipedia.org/wiki/Hungari
 
 In this example, there are three workers and three tasks. 
 
-+--------+----------------+--------------+--------------+
 | Worker | Clean Bathroom | Sweep Floors | Wash Windows |
-+========+================+==============+==============+
+|--------|----------------|--------------|--------------|
 | Alice  | 8              | 4            | 7            |
-+--------+----------------+--------------+--------------+
 | Bob    | 5              | 2            | 3            |
-+--------+----------------+--------------+--------------+
 | Carol  | 9              | 4            | 8            |
-+--------+----------------+--------------+--------------+
 
 The lowest total cost is 15. This is the case where:
 * Alice cleans the bathroom (8)

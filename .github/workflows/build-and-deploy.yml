@@ -1,6 +1,11 @@
 name: Build and Deploy
 on:
+  pull_request:
+    branches:
+      - master 
   push:
+    branches:
+      - master 
 env:
   APP_NAME: HungarianAlgorithm
   VERSION: 2.3.4

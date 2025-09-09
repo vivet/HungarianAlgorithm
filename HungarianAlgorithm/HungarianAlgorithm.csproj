@@ -7,9 +7,9 @@
 		<Company>Michael Vivet</Company>
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<LangVersion>latest</LangVersion>
-		<AssemblyVersion>2.3.4.0</AssemblyVersion>
-		<FileVersion>2.3.4.0</FileVersion>
-		<Version>2.3.4.0</Version>
+		<AssemblyVersion>2.3.5.0</AssemblyVersion>
+		<FileVersion>2.3.5.0</FileVersion>
+		<Version>2.3.5.0</Version>
 		<License>LICENSE</License>
 	    <Product>Hungarian Algorithm</Product>
 	    <Summary>Implementation Hungarian Algorithm.</Summary>

@@ -8,7 +8,7 @@ on:
       - master 
 env:
   APP_NAME: HungarianAlgorithm
-  VERSION: 0.0.1
+  VERSION: 2.3.4
   NUGET_HOST: https://api.nuget.org/v3/index.json
   NUGET_APIKEY: ${{ secrets.NUGET_APIKEY }}
 jobs:

@@ -17,7 +17,7 @@
 	    <PackageTags>Algorithm, Hungarian</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	    <PackageReleaseNotes>
-			- Updated NuGets
+			- Changed to Trusted publishing for NuGet
 		</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
